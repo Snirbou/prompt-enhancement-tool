@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark / Gray Theme Variables */
+  --bg-dark: #1e1e1e;
+  --panel-dark: #252526;
+  --border-dark: #333333;
+  --text-main: #d4d4d4;
+  --text-dim: #a1a1a1;
+  --accent-gray: #4a4a4a;
+}
+
+body {
+  color: var(--text-main);
+  background: var(--bg-dark);
+}
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark); 
+}
+::-webkit-scrollbar-thumb {
+    background: #424242; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4f4f4f; 
+}
